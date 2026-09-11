@@ -31,6 +31,24 @@ That gives a concrete review checklist for a proposed validator change:
 
 The existing [invalid-concurrency test](https://github.com/sindresorhus/p-limit/blob/783068bb9e967fd7bea8642e1bf5a3627fe38bdf/test.js#L307-L335) supplies several of those cases. This demonstration inspected source and graph records; it did not modify p-limit or run its test suite.
 
+## What a later session could recover
+
+On September 10, 2026, at about 9:10 p.m. Eastern, the same authorized assistant started a separate Brain Scanner agent-session record and explicitly read the earlier session's stored context through the hosted connector. This used the existing owner account and Codex authorization. It was not a new person, a clean Codex conversation, or an automatic context-loading test.
+
+The returned records preserved:
+
+- The earlier review's graph version, checked against the current hosted version 1.
+- The validation of `limitFunction` calling `pLimit`, which calls `validateConcurrency`.
+- The distinction that source and tests were inspected, but the tests were not executed.
+
+Recovery was partial. One earlier decision appeared as **“Context withheld by privacy filter.”** The retrieved record did not include an explicit next action. The assistant re-read the pinned upstream source to check the setter call; it could not claim to have recovered that finding from the withheld record. An empty work queue did not prove there was nothing left to review.
+
+For your own trial, explicitly request the previous review records before making another change:
+
+> Retrieve the prior session's recorded graph version, source revision, finding, validation evidence, and next action. Identify which fields are missing or withheld. Check the saved version against the current project and source before relying on the record. Do not infer missing details from a completed-session label, and do not edit code yet.
+
+Judge the result by what the connector actually returns. A successful handoff should let you recover the evidence needed for the next decision; a missing or withheld field should remain visible as a gap. This demonstration verifies explicit retrieval of some saved review records, not complete recovery, automatic recall, time savings, or compatibility with another client.
+
 ## Try the same exercise on your project
 
 1. [Create a free beta account](https://brainscanner.dev/signup) and confirm your email.
