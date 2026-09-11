@@ -16,6 +16,8 @@ flowchart LR
 
 **[Follow the example and its source links →](p-limit-dependency-example.md)**
 
+**[Read the codebase impact-analysis guide in your browser](https://brainscanner.dev/guides/codebase-impact-analysis)**
+
 **[Open the four-page visual guide (PDF)](brain-scanner-before-the-next-edit.pdf)** · [Download the PDF](https://raw.githubusercontent.com/kevin-lozada-santos/brain-scanner-walkthrough/main/brain-scanner-before-the-next-edit.pdf)
 
 A short walkthrough of the caller chain, the missing setter path, the test results, and your first-map steps.
