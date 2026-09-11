@@ -31,6 +31,10 @@ That gives a concrete review checklist for a proposed validator change:
 
 The existing [invalid-concurrency test](https://github.com/sindresorhus/p-limit/blob/783068bb9e967fd7bea8642e1bf5a3627fe38bdf/test.js#L307-L335) supplies several of those cases. This demonstration inspected source and graph records; it did not modify p-limit or run its test suite.
 
+## Later runtime checks
+
+On September 11, we ran checks against the same unchanged pinned source: **23 upstream runtime tests and the type tests passed**, along with **47 supplemental public-path assertions**. The combined npm test command failed in its lint stage. [Read the complete results, environment, limitations, and repeatable script](p-limit-runtime-checks.md). This extends the original demonstration; the earlier stored session still correctly says that tests had not been run at that time.
+
 ## What a later session could recover
 
 On September 10, 2026, at about 9:10 p.m. Eastern, the same authorized assistant started a separate Brain Scanner agent-session record and explicitly read the earlier session's stored context through the hosted connector. This used the existing owner account and Codex authorization. It was not a new person, a clean Codex conversation, or an automatic context-loading test.
@@ -60,3 +64,4 @@ Judge the result by what the connector actually returns. A successful handoff sh
 The useful result is an evidence-backed review checklist before the next agent edit. If you get stuck, [reply in the walkthrough discussion](https://github.com/openai/codex/discussions/44291) with your client and the step you reached, or email support@brainscanner.dev. Keep private source, credentials and OAuth redirect addresses out of public replies.
 
 Brain Scanner's beta is currently free. The sample library belongs to its upstream maintainers; this example does not imply their endorsement. Brain Scanner's implementation is private, and this repository contains public demonstration documentation only.
+
