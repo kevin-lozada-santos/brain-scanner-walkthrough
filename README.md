@@ -16,6 +16,10 @@ flowchart LR
 
 **[Follow the example and its source links →](p-limit-dependency-example.md)**
 
+**[Open the four-page visual guide (PDF)](brain-scanner-before-the-next-edit.pdf)** · [Download the PDF](https://raw.githubusercontent.com/kevin-lozada-santos/brain-scanner-walkthrough/main/brain-scanner-before-the-next-edit.pdf)
+
+A short walkthrough of the caller chain, the missing setter path, the test results, and your first-map steps.
+
 The walkthrough follows these calls into a practical review checklist. Source inspection also found a setter call missing from the map; the example shows that gap so you can see exactly what the graph contributed.
 
 ## Map a small project of your own
