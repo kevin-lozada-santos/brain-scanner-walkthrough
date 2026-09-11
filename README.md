@@ -1,44 +1,51 @@
-# Brain Scanner: try a first useful project map
+# See the code around your next change
 
-Public walkthrough materials for [Brain Scanner](https://brainscanner.dev/), a hosted workspace for projects built with coding agents. The open beta is free. This repository contains demo documentation and an illustrative screenshot, not the product implementation.
+**Brain Scanner gives your coding agent a project map it can look up while it works.** Follow a function to its callers, inspect the connections in the dashboard, and use them to decide what deserves review before the next edit.
 
-Published on behalf of the maker, Kevin Lozada Santos, by his authorized AI assistant.
+**[Try the interactive demo](https://brainscanner.dev/)** · **[Create a free beta account](https://brainscanner.dev/signup)**
 
+## Start with a real example
 
-## A concrete dependency review
+Suppose you're changing a concurrency validator in **p-limit**. Its saved map shows two entry points to review:
 
-Before changing a shared validator, identify its callers and the behavior that needs checking. [Follow the p-limit example](p-limit-dependency-example.md): a real saved test graph, checked against an exact public source revision, with the graph's limits made explicit.
+```mermaid
+flowchart LR
+    A["limitFunction()"] --> B["pLimit()"]
+    B --> C["validateConcurrency()"]
+```
 
-## See the workspace before signing up
+**[Follow the example and its source links →](p-limit-dependency-example.md)**
 
-![Brain Scanner public demo: an illustrative project graph connects Source Code, Dashboard UI, Agent Workflow, and Tests and Validation. The inspector shows the selected Source Code node.](project-graph-demo.png)
-
-*Screenshot of the public interactive example. All project names, counts, relationships and readiness values shown here are illustrative; they are not customer results or a production assessment.*
-
-Open the [interactive demo](https://brainscanner.dev/) without an account:
-
-1. In **Project Graph**, select a node and inspect its recorded relationship to another part of the example workspace.
-2. In **Context**, choose **Sessions** to inspect sample recorded context.
-3. In **Reports**, read **Dashboard review** and add **Preserve unsaved finding notes** to the queue. In **Queues**, inspect the linked task.
-
-The preview sends no work to an agent. A queued item requests follow-up work; it does not establish that a fix was implemented or verified.
+The walkthrough follows these calls into a practical review checklist. Source inspection also found a setter call missing from the map; the example shows that gap so you can see exactly what the graph contributed.
 
 ## Map a small project of your own
 
-1. [Create a free account](https://brainscanner.dev/signup) and open the confirmation link in your email.
-2. Follow the [connection instructions](https://brainscanner.dev/connect) in a compatible coding agent. The hosted endpoint is `https://brainscanner.dev/mcp/v2`, using remote Streamable HTTP MCP and OAuth. Supported client capabilities and local permissions matter; website sign-in alone does not connect the agent.
-3. Choose a small project you are permitted to inspect. A public sample project is enough. Once the connector is authorized, try this prompt in an agent that can access that project:
+Start with a public sample or a project you're permitted to inspect.
 
-> Use the available Brain Scanner workflow to map this project. Submit permitted project metadata only, with no source-file contents, raw diffs, logs or secrets. Pick one file or symbol and show one recorded relationship, what supports it, and one unresolved next step. Tell me what was actually saved. If a required tool or permission is missing, identify it before proceeding.
+1. **[Create your free account](https://brainscanner.dev/signup)** and confirm your email.
+2. **[Connect your coding agent](https://brainscanner.dev/connect).** The hosted MCP endpoint is `https://brainscanner.dev/mcp/v2`. Complete the agent's authorization as well as the website sign-in.
+3. **Open the project in your agent.** Replace the bracketed text below with one function or file you want to understand:
 
-4. Open the dashboard and inspect the saved relationship. Compare it with the relevant code. Record an unresolved question and the evidence needed to answer it.
+> Map this project in Brain Scanner, starting with [function or file]. Show its callers and relevant tests, with source references, then open the saved graph. Leave the code unchanged. Save project metadata only; exclude source-file contents, raw diffs, logs and secrets.
 
-A useful first result is one understandable relationship and a clear next question. A graph alone does not prove completeness or correctness. Context must be recorded through supported workflows; Brain Scanner does not automatically capture every coding-agent conversation or local edit.
+4. **Follow one connection in the dashboard.** Check it against the source and use it to choose the next file or test to review.
 
-## Access and help
+Your first result should be a saved map you can inspect and a concrete starting point for reviewing your change. Start small; you can explore more of the project from there.
 
-The hosted connector manages project records within its authorization. Your agent's filesystem, shell and repository access depend on separately granted local permissions. Review the [access terms](https://brainscanner.dev/terms) and [privacy notice](https://brainscanner.dev/privacy) before submitting project information.
+**Stuck on a step?** Tell us your client and where you stopped in the [walkthrough discussion](https://github.com/openai/codex/discussions/44291), or email **support@brainscanner.dev**. Keep private code and credentials out of public replies.
 
-If setup stalls, reply in the [public Codex walkthrough discussion](https://github.com/openai/codex/discussions/44291) with your client and the step you reached, or email support@brainscanner.dev. Do not include secrets, OAuth redirect addresses, or private project content in a public reply.
+## Explore before connecting
 
-Current documentation note: the connection page still contains an outdated private-beta sentence. The homepage and signup currently offer the free open beta. This walkthrough does not claim compatibility with every MCP client.
+![Brain Scanner interactive demo showing a project graph and selected-node details.](project-graph-demo.png)
+
+*Screenshot of the interactive demo, with illustrative project data.*
+
+The [no-account demo](https://brainscanner.dev/) lets you select graph nodes, inspect sample session context, and try moving a report item into a demo queue. Demo actions do not send work to an agent.
+
+## About this walkthrough
+
+Kevin Lozada Santos built Brain Scanner. His AI assistant prepared this walkthrough and helps answer setup questions. This repository contains public demo materials; the product implementation is private.
+
+The p-limit example used an existing authorized owner test project. Client support and local project access determine which workflows you can run. Saved maps can miss relationships, and context is recorded through supported workflows. Review important findings against the source before relying on them.
+
+[Privacy](https://brainscanner.dev/privacy) · [Terms](https://brainscanner.dev/terms)
