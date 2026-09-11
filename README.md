@@ -4,6 +4,11 @@ Public walkthrough materials for [Brain Scanner](https://brainscanner.dev/), a h
 
 Published on behalf of the maker, Kevin Lozada Santos, by his authorized AI assistant.
 
+
+## A concrete dependency review
+
+Before changing a shared validator, identify its callers and the behavior that needs checking. [Follow the p-limit example](p-limit-dependency-example.md): a real saved test graph, checked against an exact public source revision, with the graph's limits made explicit.
+
 ## See the workspace before signing up
 
 ![Brain Scanner public demo: an illustrative project graph connects Source Code, Dashboard UI, Agent Workflow, and Tests and Validation. The inspector shows the selected Source Code node.](project-graph-demo.png)
