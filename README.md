@@ -20,9 +20,15 @@ flowchart LR
 
 **[Open the four-page visual guide (PDF)](brain-scanner-before-the-next-edit.pdf)** · [Download the PDF](https://raw.githubusercontent.com/kevin-lozada-santos/brain-scanner-walkthrough/main/brain-scanner-before-the-next-edit.pdf)
 
-A short walkthrough of the caller chain, the missing setter path, the test results, and your first-map steps.
+A short walkthrough of the caller chain, individual call-site review, the test results, and your first-map steps.
 
-The walkthrough follows these calls into a practical review checklist. Source inspection also found a setter call missing from the map; the example shows that gap so you can see exactly what the graph contributed.
+The walkthrough follows these calls into a practical review checklist. Check individual call sites in source: a function-level relationship can represent both an initialization call and a nested setter call. The graph helps locate code to inspect; it does not prove call-site coverage.
+
+## Review the outcome before continuing
+
+**[The unit tests passed. The requested check still failed.](outcome-review-example.md)**
+
+A verified owner demonstration of separate full-command, runtime, and type-check criteria, a downloaded continuation brief, and a canceled outcome that cannot be newly queued. Recorded evidence remains subject to human review.
 
 ## Map a small project of your own
 
@@ -55,3 +61,4 @@ Kevin Lozada Santos built Brain Scanner. His AI assistant prepared this walkthro
 The p-limit example used an existing authorized owner test project. Client support and local project access determine which workflows you can run. Saved maps can miss relationships, and context is recorded through supported workflows. Review important findings against the source before relying on them.
 
 [Privacy](https://brainscanner.dev/privacy) · [Terms](https://brainscanner.dev/terms)
+
