@@ -1,0 +1,65 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:01.600
+Twenty-three runtime tests passed.
+
+2
+00:00:01.600 --> 00:00:03.599
+But the task still failed.
+
+3
+00:00:03.599 --> 00:00:07.998
+The requested check was the full N P M test
+command.
+
+4
+00:00:08.798 --> 00:00:10.966
+That command failed at lint.
+
+5
+00:00:10.966 --> 00:00:13.568
+Runtime tests and type checks passed.
+
+6
+00:00:13.568 --> 00:00:15.737
+These are three different results.
+
+7
+00:00:16.537 --> 00:00:20.589
+In Brain Scanner, we saved those results
+against separate criteria.
+
+8
+00:00:20.589 --> 00:00:25.046
+The failure stayed visible in the report and
+downloaded continuation brief.
+
+9
+00:00:25.846 --> 00:00:30.504
+This is an illustrated owner demonstration,
+checked with Codex and Chrome.
+
+10
+00:00:30.504 --> 00:00:32.621
+Brain Scanner records supplied evidence.
+
+11
+00:00:32.621 --> 00:00:36.009
+It does not independently prove that tests
+ran.
+
+12
+00:00:36.809 --> 00:00:39.984
+Try the free beta at brain scanner dot dev.
+
+13
+00:00:39.984 --> 00:00:42.806
+Verify your email, then connect your coding
+agent.
+
+14
+00:00:42.806 --> 00:00:45.628
+The example and limitations are in the
+description.
+
