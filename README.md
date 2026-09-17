@@ -38,6 +38,8 @@ A verified owner demonstration of separate full-command, runtime, and type-check
 
 ## Map a small project of your own
 
+**[Use the first-scan kit: a prompt, completion receipt, and help for each blocked step →](first-scan-kit.md)**
+
 Start with a public sample or a project you're permitted to inspect.
 
 1. **[Create your free account](https://brainscanner.dev/signup)** and confirm your email.
