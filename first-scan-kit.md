@@ -21,6 +21,8 @@ This is a natural-language request, not a tool API. Actual results depend on the
 
 ## Keep this receipt privately
 
+[Download the blank receipt](https://raw.githubusercontent.com/kevin-lozada-santos/brain-scanner-walkthrough/main/first-scan-receipt.txt) or copy the template below. Fill it locally; it is not automatically sent anywhere.
+
 ```text
 First-scan receipt
 Date:

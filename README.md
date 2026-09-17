@@ -32,6 +32,8 @@ Use the free browser comparison before connecting an account. Compare the config
 
 **[The unit tests passed. The requested check still failed.](outcome-review-example.md)**
 
+[Use the worked review checklist](agent-review-checklist.md) to connect affected behavior, callers, and the evidence for each test result.
+
 **[Watch the 46-second illustrated walkthrough](https://kevin-lozada-santos.github.io/brain-scanner-walkthrough/)** — video, English captions, transcript, evidence, and free-beta setup links. This is an owner demonstration with synthetic narration, not a screen recording or customer result.
 
 A verified owner demonstration of separate full-command, runtime, and type-check criteria, a downloaded continuation brief, and a canceled outcome that cannot be newly queued. Recorded evidence remains subject to human review.

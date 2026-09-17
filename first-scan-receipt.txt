@@ -1,0 +1,18 @@
+First-scan receipt
+Date:
+Agent/client:
+Repository or project label (private):
+Requested scope (one function/file):
+Actual mapped scope:
+Current source revision:
+Mapped source revision (or unknown):
+Saved graph version:
+Saved map URL (private; do not post publicly):
+One relation: [caller] -> [callee]
+Source reference inspected:
+Independent source check: confirmed / contradicted / not checked
+Relevant test reference (not an execution claim):
+Missing, omitted, or uncertain relationships:
+Next file or test to inspect:
+Status: connected only / map saved / relation checked / blocked
+Blocked step, if any:
