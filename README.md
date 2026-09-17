@@ -26,6 +26,10 @@ The walkthrough follows these calls into a practical review checklist. Check ind
 
 ## Review the outcome before continuing
 
+**Did your agent run the whole test command? [Check the command against your package.json →](https://brainscanner.dev/check-test-command?utm_source=github&utm_medium=owned&utm_campaign=first_scan_20260917&utm_content=readme)**
+
+Use the free browser comparison before connecting an account. Compare the configured test script with the command your agent reported, then inspect the worked example below. A command match does not prove execution or a passing result.
+
 **[The unit tests passed. The requested check still failed.](outcome-review-example.md)**
 
 **[Watch the 46-second illustrated walkthrough](https://kevin-lozada-santos.github.io/brain-scanner-walkthrough/)** — video, English captions, transcript, evidence, and free-beta setup links. This is an owner demonstration with synthetic narration, not a screen recording or customer result.
